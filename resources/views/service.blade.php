@@ -6,7 +6,9 @@
 <h1>Service</h1>
 <ul>
     @forelse($services as $service) 
-        <li>{{ $service }}</li>
+
+        
+        <li>{{ $service->name }}</li>
         @empty
         <li>empty</li>
     @endforelse
